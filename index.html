@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <!--Кодировка-->
-    <title>Журнал оценок </title>   <!--имя верхней плашки-->
-    <link rel="stylesheet" href="styles.css">   <!--линк соединяет одно с другим, рел - тип файла, хреф - ссылка на файл(путь)-->
+    <title>Журнал оценок </title>  
+    <link rel="stylesheet" href="styles.css">   
     <!--Иконка-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -16,12 +16,12 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="icon" href="favicon.ico">
     <!--Иконка-->
-    <!--Google Visualization-->   <!--это таблица в конце-->
+    <!--Google Visualization-->   
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
-    <script src="https://www.google.com/jsapi"></script>   <!--это все базовые настройки гугля для красивой картинки-->
+    <script src="https://www.google.com/jsapi"></script>   
     <script>
-        google.load("visualization", "1", { packages: ["corechart"] });   < !--отвечает за открытие форм, бралось с сайта конструктора гугла-->
+        google.load("visualization", "1", { packages: ["corechart"] });   
         google.setOnLoadCallback(drawChart);
     </script>
     <script>
@@ -32,16 +32,16 @@
 </head>
     <body>
         <div class="content">
-            <!--див -контейнер с информацией, чтобы потом можно было в файле стилей можно было менять блоками-->
-            <h1 class="PageTitle">Добро пожаловать на страницу успеваемости групп АБ!</h1>   <!--отвечает за текст(заголовок)-->
+            
+            <h1 class="PageTitle">Добро пожаловать на страницу успеваемости групп АБ!</h1>  
             <!--Табы-->
             <div class="container">
                 <div class="tab">
                     <div class="tab-content" id="content-1">
-                        <!--делит вкладки-->
+                      
                         Для загрузки оценок используйте файл с расширениями .cvs .txt и .xlsx
-                        <br>   <!--перенос на след строку-->
-                        <input type="file" accept=".csv, .xlsx, .txt" onchange="dowFile(this) ">   <!--выбор файла, разрешенные типы, запуск функции загрузки файла-->
+                        <br>   
+                        <input type="file" accept=".csv, .xlsx, .txt" onchange="dowFile(this) ">   
                     </div>
                     <div class="tab-content" id="content-2">
                         <h2>На этой странице вы можете создать или отредактировать журнал</h2>
@@ -93,9 +93,9 @@
                             </button>
                         </div>
                         <table id="outputTable">
-                            <!--вывод загруженной таблицы-->
+                           
                             <tr>
-                                <!--тр новая строка(столбец)-->
+                               
                                 <th>ФИО</th>
                                 <th>Группа</th>
                                 <th>Информатика</th>
@@ -106,7 +106,7 @@
                                 <th>Действие</th>
                             </tr>
                         </table>
-                        <a href="#" onclick="downloadTable()">Скачать таблицу</a>   <!--кнопочка-->
+                        <a href="#" onclick="downloadTable()">Скачать таблицу</a>  
                     </div>
                     <div class="tab-content" id="content-3">
                         Для отображения информации загрузите файл.
@@ -133,12 +133,12 @@
                     </div>
                     <div class="tab-content" id="content-7">
                         <h2>Информация о разработчике</h2>
-                        <img src="developer.jpg " style="width: 300px; height: 400px;">   <!--картинка-->
+                        <img src="developer.jpg " style="width: 300px; height: 400px;">  
                         <p>Шальнев Григорий Михайлович</p>
                         <a href="https://vk.com/somenonaim">ВКонтакте</a>
                     </div>
                     <div class="tab-nav">
-                        <!--описание кнопок-->
+                       
                         <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
                         <label for="tab-btn-1">Загрузка журнала</label>
                         <input id="tab-btn-2" name="tab-btn" type="radio" value="">
